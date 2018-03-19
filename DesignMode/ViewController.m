@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "OperationFactory.h"
+#import "CashContext.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    CashContext *context = [[CashContext alloc] initWithCashType:CashTypeReturn_300to100];
+    double result = [context getResultWithOriMoney:300 * 4];
+    NSLog(@"%f", result);
 }
 
 
