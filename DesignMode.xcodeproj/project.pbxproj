@@ -21,6 +21,11 @@
 		AE6DBCCA205E6C7E00C656DD /* OpetationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBCC9205E6C7E00C656DD /* OpetationMul.m */; };
 		AE6DBCCD205E6CBF00C656DD /* OperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBCCC205E6CBF00C656DD /* OperationDiv.m */; };
 		AE6DBCD0205E6EE300C656DD /* OperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBCCF205E6EE300C656DD /* OperationFactory.m */; };
+		AE8B333221524569009308CB /* YellowPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333121524569009308CB /* YellowPerson.m */; };
+		AE8B333521524685009308CB /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333421524685009308CB /* Decorator.m */; };
+		AE8B333821524763009308CB /* ShirtDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333721524763009308CB /* ShirtDecorator.m */; };
+		AE8B333B215247AD009308CB /* SuitDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333A215247AD009308CB /* SuitDecorator.m */; };
+		AE8B333E215247CC009308CB /* UnderwearDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333D215247CC009308CB /* UnderwearDecorator.m */; };
 		AE99803A205F662600EA4FFE /* CashSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE998039205F662600EA4FFE /* CashSuper.m */; };
 		AE99803D205F667600EA4FFE /* CashNomal.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99803C205F667600EA4FFE /* CashNomal.m */; };
 		AE998040205F668600EA4FFE /* CashRebate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99803F205F668600EA4FFE /* CashRebate.m */; };
@@ -74,6 +79,17 @@
 		AE6DBCCC205E6CBF00C656DD /* OperationDiv.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationDiv.m; sourceTree = "<group>"; };
 		AE6DBCCE205E6EE300C656DD /* OperationFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationFactory.h; sourceTree = "<group>"; };
 		AE6DBCCF205E6EE300C656DD /* OperationFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationFactory.m; sourceTree = "<group>"; };
+		AE8B332F21524532009308CB /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AE8B333021524569009308CB /* YellowPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowPerson.h; sourceTree = "<group>"; };
+		AE8B333121524569009308CB /* YellowPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowPerson.m; sourceTree = "<group>"; };
+		AE8B333321524685009308CB /* Decorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
+		AE8B333421524685009308CB /* Decorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
+		AE8B333621524763009308CB /* ShirtDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShirtDecorator.h; sourceTree = "<group>"; };
+		AE8B333721524763009308CB /* ShirtDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShirtDecorator.m; sourceTree = "<group>"; };
+		AE8B3339215247AD009308CB /* SuitDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuitDecorator.h; sourceTree = "<group>"; };
+		AE8B333A215247AD009308CB /* SuitDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuitDecorator.m; sourceTree = "<group>"; };
+		AE8B333C215247CC009308CB /* UnderwearDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderwearDecorator.h; sourceTree = "<group>"; };
+		AE8B333D215247CC009308CB /* UnderwearDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderwearDecorator.m; sourceTree = "<group>"; };
 		AE998038205F662600EA4FFE /* CashSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashSuper.h; sourceTree = "<group>"; };
 		AE998039205F662600EA4FFE /* CashSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashSuper.m; sourceTree = "<group>"; };
 		AE99803B205F667600EA4FFE /* CashNomal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashNomal.h; sourceTree = "<group>"; };
@@ -134,6 +150,7 @@
 		AE6DBC88205E6A3C00C656DD /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				AE8B332B21522578009308CB /* 装饰模式（Decorator） */,
 				AE998037205F659A00EA4FFE /* 策略模式 */,
 				AE6DBCBB205E6A6100C656DD /* 简单工厂模式 */,
 				AE6DBC89205E6A3C00C656DD /* AppDelegate.h */,
@@ -184,6 +201,24 @@
 				AE6DBCCC205E6CBF00C656DD /* OperationDiv.m */,
 			);
 			path = "简单工厂模式";
+			sourceTree = "<group>";
+		};
+		AE8B332B21522578009308CB /* 装饰模式（Decorator） */ = {
+			isa = PBXGroup;
+			children = (
+				AE8B332F21524532009308CB /* Person.h */,
+				AE8B333021524569009308CB /* YellowPerson.h */,
+				AE8B333121524569009308CB /* YellowPerson.m */,
+				AE8B333321524685009308CB /* Decorator.h */,
+				AE8B333421524685009308CB /* Decorator.m */,
+				AE8B333621524763009308CB /* ShirtDecorator.h */,
+				AE8B333721524763009308CB /* ShirtDecorator.m */,
+				AE8B3339215247AD009308CB /* SuitDecorator.h */,
+				AE8B333A215247AD009308CB /* SuitDecorator.m */,
+				AE8B333C215247CC009308CB /* UnderwearDecorator.h */,
+				AE8B333D215247CC009308CB /* UnderwearDecorator.m */,
+			);
+			path = "装饰模式（Decorator）";
 			sourceTree = "<group>";
 		};
 		AE998037205F659A00EA4FFE /* 策略模式 */ = {
@@ -266,7 +301,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "张鑫";
+				ORGANIZATIONNAME = sajiner;
 				TargetAttributes = {
 					AE6DBC85205E6A3C00C656DD = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -336,8 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8B333821524763009308CB /* ShirtDecorator.m in Sources */,
 				AE6DBC8E205E6A3C00C656DD /* ViewController.m in Sources */,
+				AE8B333B215247AD009308CB /* SuitDecorator.m in Sources */,
 				AE998040205F668600EA4FFE /* CashRebate.m in Sources */,
+				AE8B333E215247CC009308CB /* UnderwearDecorator.m in Sources */,
 				AE6DBCCA205E6C7E00C656DD /* OpetationMul.m in Sources */,
 				AE6DBC99205E6A3C00C656DD /* main.m in Sources */,
 				AE6DBCC7205E6C0400C656DD /* OpetationSub.m in Sources */,
@@ -345,8 +383,10 @@
 				AE6DBCD0205E6EE300C656DD /* OperationFactory.m in Sources */,
 				AE998043205F66A200EA4FFE /* CashReturn.m in Sources */,
 				AE99806B205FA2F000EA4FFE /* CashContext.m in Sources */,
+				AE8B333521524685009308CB /* Decorator.m in Sources */,
 				AE6DBCCD205E6CBF00C656DD /* OperationDiv.m in Sources */,
 				AE6DBCBE205E6A7200C656DD /* Operation.m in Sources */,
+				AE8B333221524569009308CB /* YellowPerson.m in Sources */,
 				AE99803A205F662600EA4FFE /* CashSuper.m in Sources */,
 				AE99803D205F667600EA4FFE /* CashNomal.m in Sources */,
 				AE6DBCC1205E6B8800C656DD /* OperationAdd.m in Sources */,

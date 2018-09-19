@@ -14,8 +14,7 @@
 @interface CashContext ()
 
 @property (nonatomic, strong) CashSuper *cashStrategy; ///< 促销类
-
-@end
+ @end
 
 @implementation CashContext
 
@@ -39,7 +38,7 @@
                 break;
         }
     }
-    return self;
+    return self; 
 }
 
 - (double)getResultWithOriMoney:(double)oriMoney {

@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "OperationFactory.h"
 #import "CashContext.h"
+#import "YellowPerson.h"
+#import "ShirtDecorator.h"
+#import "SuitDecorator.h"
+#import "UnderwearDecorator.h"
 
 @interface ViewController ()
 
@@ -21,15 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    CashContext *context = [[CashContext alloc] initWithCashType:CashTypeReturn_300to100];
-    double result = [context getResultWithOriMoney:300 * 4];
-    NSLog(@"%f", result);
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    YellowPerson *person = [[YellowPerson alloc] initWithName:@"Freak"];
+    ShirtDecorator *shirtD = [[ShirtDecorator alloc] initWithPerson:person];
+    SuitDecorator *suitD = [[SuitDecorator alloc] initWithPerson:shirtD];
+    UnderwearDecorator *underWearD = [[UnderwearDecorator alloc] initWithPerson:suitD];
+    [underWearD show];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
