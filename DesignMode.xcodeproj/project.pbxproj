@@ -26,6 +26,9 @@
 		AE8B333821524763009308CB /* ShirtDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333721524763009308CB /* ShirtDecorator.m */; };
 		AE8B333B215247AD009308CB /* SuitDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333A215247AD009308CB /* SuitDecorator.m */; };
 		AE8B333E215247CC009308CB /* UnderwearDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B333D215247CC009308CB /* UnderwearDecorator.m */; };
+		AE8B337321537608009308CB /* Pursuit.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B337221537608009308CB /* Pursuit.m */; };
+		AE8B3376215376CB009308CB /* SchoolGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B3375215376CB009308CB /* SchoolGirl.m */; };
+		AE8B337921537746009308CB /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8B337821537746009308CB /* Proxy.m */; };
 		AE99803A205F662600EA4FFE /* CashSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE998039205F662600EA4FFE /* CashSuper.m */; };
 		AE99803D205F667600EA4FFE /* CashNomal.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99803C205F667600EA4FFE /* CashNomal.m */; };
 		AE998040205F668600EA4FFE /* CashRebate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99803F205F668600EA4FFE /* CashRebate.m */; };
@@ -90,6 +93,13 @@
 		AE8B333A215247AD009308CB /* SuitDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuitDecorator.m; sourceTree = "<group>"; };
 		AE8B333C215247CC009308CB /* UnderwearDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderwearDecorator.h; sourceTree = "<group>"; };
 		AE8B333D215247CC009308CB /* UnderwearDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderwearDecorator.m; sourceTree = "<group>"; };
+		AE8B337021537567009308CB /* IGiveGift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGiveGift.h; sourceTree = "<group>"; };
+		AE8B337121537608009308CB /* Pursuit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pursuit.h; sourceTree = "<group>"; };
+		AE8B337221537608009308CB /* Pursuit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pursuit.m; sourceTree = "<group>"; };
+		AE8B3374215376CB009308CB /* SchoolGirl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchoolGirl.h; sourceTree = "<group>"; };
+		AE8B3375215376CB009308CB /* SchoolGirl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchoolGirl.m; sourceTree = "<group>"; };
+		AE8B337721537746009308CB /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		AE8B337821537746009308CB /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
 		AE998038205F662600EA4FFE /* CashSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashSuper.h; sourceTree = "<group>"; };
 		AE998039205F662600EA4FFE /* CashSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashSuper.m; sourceTree = "<group>"; };
 		AE99803B205F667600EA4FFE /* CashNomal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashNomal.h; sourceTree = "<group>"; };
@@ -150,6 +160,7 @@
 		AE6DBC88205E6A3C00C656DD /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				AE8B336F2153733D009308CB /* 代理模式（Proxy） */,
 				AE8B332B21522578009308CB /* 装饰模式（Decorator） */,
 				AE998037205F659A00EA4FFE /* 策略模式 */,
 				AE6DBCBB205E6A6100C656DD /* 简单工厂模式 */,
@@ -219,6 +230,20 @@
 				AE8B333D215247CC009308CB /* UnderwearDecorator.m */,
 			);
 			path = "装饰模式（Decorator）";
+			sourceTree = "<group>";
+		};
+		AE8B336F2153733D009308CB /* 代理模式（Proxy） */ = {
+			isa = PBXGroup;
+			children = (
+				AE8B337021537567009308CB /* IGiveGift.h */,
+				AE8B337121537608009308CB /* Pursuit.h */,
+				AE8B337221537608009308CB /* Pursuit.m */,
+				AE8B3374215376CB009308CB /* SchoolGirl.h */,
+				AE8B3375215376CB009308CB /* SchoolGirl.m */,
+				AE8B337721537746009308CB /* Proxy.h */,
+				AE8B337821537746009308CB /* Proxy.m */,
+			);
+			path = "代理模式（Proxy）";
 			sourceTree = "<group>";
 		};
 		AE998037205F659A00EA4FFE /* 策略模式 */ = {
@@ -372,9 +397,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8B333821524763009308CB /* ShirtDecorator.m in Sources */,
+				AE8B3376215376CB009308CB /* SchoolGirl.m in Sources */,
 				AE6DBC8E205E6A3C00C656DD /* ViewController.m in Sources */,
 				AE8B333B215247AD009308CB /* SuitDecorator.m in Sources */,
 				AE998040205F668600EA4FFE /* CashRebate.m in Sources */,
+				AE8B337321537608009308CB /* Pursuit.m in Sources */,
+				AE8B337921537746009308CB /* Proxy.m in Sources */,
 				AE8B333E215247CC009308CB /* UnderwearDecorator.m in Sources */,
 				AE6DBCCA205E6C7E00C656DD /* OpetationMul.m in Sources */,
 				AE6DBC99205E6A3C00C656DD /* main.m in Sources */,

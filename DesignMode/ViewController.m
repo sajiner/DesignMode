@@ -13,6 +13,8 @@
 #import "ShirtDecorator.h"
 #import "SuitDecorator.h"
 #import "UnderwearDecorator.h"
+#import "SchoolGirl.h"
+#import "Proxy.h"
 
 @interface ViewController ()
 
@@ -25,11 +27,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    YellowPerson *person = [[YellowPerson alloc] initWithName:@"Freak"];
-    ShirtDecorator *shirtD = [[ShirtDecorator alloc] initWithPerson:person];
-    SuitDecorator *suitD = [[SuitDecorator alloc] initWithPerson:shirtD];
-    UnderwearDecorator *underWearD = [[UnderwearDecorator alloc] initWithPerson:suitD];
-    [underWearD show];
+    SchoolGirl *girl = [[SchoolGirl alloc] init];
+    girl.name = @"Lily";
+    
+    Proxy *proxy = [[Proxy alloc] init];
+    proxy.pursuit = [[Pursuit alloc] initWithGirl:girl];
+    proxy.pursuit.name = @"Jim";
+    [proxy giveChocolate];
+    [proxy giveDolls];
+    [proxy giveFlowers];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -39,5 +45,12 @@
     NSLog(@"%f", [ope getResult]);
 }
 
+- (void)testDecorator {
+    YellowPerson *person = [[YellowPerson alloc] initWithName:@"Freak"];
+    ShirtDecorator *shirtD = [[ShirtDecorator alloc] initWithPerson:person];
+    SuitDecorator *suitD = [[SuitDecorator alloc] initWithPerson:shirtD];
+    UnderwearDecorator *underWearD = [[UnderwearDecorator alloc] initWithPerson:suitD];
+    [underWearD show];
+}
 
 @end
