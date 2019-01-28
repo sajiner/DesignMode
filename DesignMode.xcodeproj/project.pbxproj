@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2BF2BE21FEF86F0004C55C /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2BF2BD21FEF86F0004C55C /* Product.m */; };
+		AE2BF2C121FEF9510004C55C /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2BF2C021FEF9510004C55C /* Builder.m */; };
+		AE2BF2C421FEFA590004C55C /* ConcreteBuilder1.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2BF2C321FEFA590004C55C /* ConcreteBuilder1.m */; };
+		AE2BF2C721FEFAC80004C55C /* ConcreteBuilder2.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2BF2C621FEFAC80004C55C /* ConcreteBuilder2.m */; };
+		AE2BF2CA21FEFB020004C55C /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2BF2C921FEFB020004C55C /* Director.m */; };
 		AE6DBC8B205E6A3C00C656DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBC8A205E6A3C00C656DD /* AppDelegate.m */; };
 		AE6DBC8E205E6A3C00C656DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6DBC8D205E6A3C00C656DD /* ViewController.m */; };
 		AE6DBC91205E6A3C00C656DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6DBC8F205E6A3C00C656DD /* Main.storyboard */; };
@@ -54,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2BF2BC21FEF86F0004C55C /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		AE2BF2BD21FEF86F0004C55C /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		AE2BF2BF21FEF9510004C55C /* Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
+		AE2BF2C021FEF9510004C55C /* Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Builder.m; sourceTree = "<group>"; };
+		AE2BF2C221FEFA590004C55C /* ConcreteBuilder1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteBuilder1.h; sourceTree = "<group>"; };
+		AE2BF2C321FEFA590004C55C /* ConcreteBuilder1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteBuilder1.m; sourceTree = "<group>"; };
+		AE2BF2C521FEFAC80004C55C /* ConcreteBuilder2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteBuilder2.h; sourceTree = "<group>"; };
+		AE2BF2C621FEFAC80004C55C /* ConcreteBuilder2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteBuilder2.m; sourceTree = "<group>"; };
+		AE2BF2C821FEFB020004C55C /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		AE2BF2C921FEFB020004C55C /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
 		AE6DBC86205E6A3C00C656DD /* DesignMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6DBC89205E6A3C00C656DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE6DBC8A205E6A3C00C656DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +152,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE2BF2BB21FEF85C0004C55C /* 建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				AE2BF2BC21FEF86F0004C55C /* Product.h */,
+				AE2BF2BD21FEF86F0004C55C /* Product.m */,
+				AE2BF2BF21FEF9510004C55C /* Builder.h */,
+				AE2BF2C021FEF9510004C55C /* Builder.m */,
+				AE2BF2C221FEFA590004C55C /* ConcreteBuilder1.h */,
+				AE2BF2C321FEFA590004C55C /* ConcreteBuilder1.m */,
+				AE2BF2C521FEFAC80004C55C /* ConcreteBuilder2.h */,
+				AE2BF2C621FEFAC80004C55C /* ConcreteBuilder2.m */,
+				AE2BF2C821FEFB020004C55C /* Director.h */,
+				AE2BF2C921FEFB020004C55C /* Director.m */,
+			);
+			path = "建造者模式";
+			sourceTree = "<group>";
+		};
 		AE6DBC7D205E6A3C00C656DD = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +192,7 @@
 		AE6DBC88205E6A3C00C656DD /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				AE2BF2BB21FEF85C0004C55C /* 建造者模式 */,
 				AE8B336F2153733D009308CB /* 代理模式（Proxy） */,
 				AE8B332B21522578009308CB /* 装饰模式（Decorator） */,
 				AE998037205F659A00EA4FFE /* 策略模式 */,
@@ -399,7 +432,11 @@
 				AE8B333821524763009308CB /* ShirtDecorator.m in Sources */,
 				AE8B3376215376CB009308CB /* SchoolGirl.m in Sources */,
 				AE6DBC8E205E6A3C00C656DD /* ViewController.m in Sources */,
+				AE2BF2C721FEFAC80004C55C /* ConcreteBuilder2.m in Sources */,
+				AE2BF2CA21FEFB020004C55C /* Director.m in Sources */,
+				AE2BF2C121FEF9510004C55C /* Builder.m in Sources */,
 				AE8B333B215247AD009308CB /* SuitDecorator.m in Sources */,
+				AE2BF2BE21FEF86F0004C55C /* Product.m in Sources */,
 				AE998040205F668600EA4FFE /* CashRebate.m in Sources */,
 				AE8B337321537608009308CB /* Pursuit.m in Sources */,
 				AE8B337921537746009308CB /* Proxy.m in Sources */,
@@ -415,6 +452,7 @@
 				AE6DBCCD205E6CBF00C656DD /* OperationDiv.m in Sources */,
 				AE6DBCBE205E6A7200C656DD /* Operation.m in Sources */,
 				AE8B333221524569009308CB /* YellowPerson.m in Sources */,
+				AE2BF2C421FEFA590004C55C /* ConcreteBuilder1.m in Sources */,
 				AE99803A205F662600EA4FFE /* CashSuper.m in Sources */,
 				AE99803D205F667600EA4FFE /* CashNomal.m in Sources */,
 				AE6DBCC1205E6B8800C656DD /* OperationAdd.m in Sources */,

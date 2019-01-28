@@ -15,6 +15,9 @@
 #import "UnderwearDecorator.h"
 #import "SchoolGirl.h"
 #import "Proxy.h"
+#import "Director.h"
+#import "ConcreteBuilder1.h"
+#import "ConcreteBuilder2.h"
 
 @interface ViewController ()
 
@@ -26,16 +29,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    SchoolGirl *girl = [[SchoolGirl alloc] init];
-    girl.name = @"Lily";
     
-    Proxy *proxy = [[Proxy alloc] init];
-    proxy.pursuit = [[Pursuit alloc] initWithGirl:girl];
-    proxy.pursuit.name = @"Jim";
-    [proxy giveChocolate];
-    [proxy giveDolls];
-    [proxy giveFlowers];
+    Director *director = [[Director alloc] init];
+    Builder *b1 = [[ConcreteBuilder1 alloc] init];
+    Builder *b2 = [[ConcreteBuilder2 alloc] init];
+    
+    [director constructBuilder:b1];
+    Product *p1 = [b1 getResult];
+    [p1 show];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -51,6 +52,18 @@
     SuitDecorator *suitD = [[SuitDecorator alloc] initWithPerson:shirtD];
     UnderwearDecorator *underWearD = [[UnderwearDecorator alloc] initWithPerson:suitD];
     [underWearD show];
+}
+
+- (void)proxyTest {
+    SchoolGirl *girl = [[SchoolGirl alloc] init];
+    girl.name = @"Lily";
+    
+    Proxy *proxy = [[Proxy alloc] init];
+    proxy.pursuit = [[Pursuit alloc] initWithGirl:girl];
+    proxy.pursuit.name = @"Jim";
+    [proxy giveChocolate];
+    [proxy giveDolls];
+    [proxy giveFlowers];
 }
 
 @end
